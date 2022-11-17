@@ -8,6 +8,7 @@
 
 public with sharing class TestCI {
     public static Boolean TestCI() {
+        System.debug('test');
         return true;
     }
 }
