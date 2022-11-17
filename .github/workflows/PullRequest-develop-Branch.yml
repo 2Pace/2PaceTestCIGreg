@@ -108,11 +108,11 @@ jobs:
                   sfdx plugins 
 
             # Refresh ubuntu repositories
-            - name: 'Update Ubuntu repos'
-              run: | 
-                  sudo mv /etc/apt/sources.list.d/* ~/solution
-                  sudo apt update 
-
+#            - name: 'Update Ubuntu repos'
+#              run: | 
+#                  sudo mv /etc/apt/sources.list.d/* ~/solution
+#                  sudo apt update 
+#
             # Install java as it is required for the next step
             - name: 'Installing java'
               run: sudo apt-get install openjdk-8-jdk
