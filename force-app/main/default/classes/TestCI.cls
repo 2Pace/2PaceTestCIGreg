@@ -1,3 +1,11 @@
+/**
+ * @ description:
+ * @ author: Gregory Quinet
+ * @ group:
+ * @ last modified on: 2022-11-17
+ * @ last modified by: Gregory Quinet
+ */
+
 public with sharing class TestCI {
     public static Boolean TestCI() {
         return true;
