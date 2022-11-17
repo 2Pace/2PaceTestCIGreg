@@ -27,8 +27,7 @@ jobs:
         # can specify which OS this VM should run on. 
         # In this case, we are going to run our commands on the latest version
         # of ubuntu
-#        runs-on: ubuntu-latest
-        runs-on: ubuntu-22.04
+        runs-on: ubuntu-latest
         if: ${{ github.actor != 'dependabot[bot]' }}
         steps:
             # Now we install nodejs in the VM, and specify version 14
@@ -107,6 +106,12 @@ jobs:
               run: | 
                   echo y | sfdx plugins:install sfdx-git-delta
                   sfdx plugins 
+                  
+            # Refresh ubuntu repositories
+            - name: 'Update Ubuntu repos'
+              run: sudo mv /etc/apt/sources.list.d/* ~/solution
+              run: sudo apt update
+
             # Install java as it is required for the next step
             - name: 'Installing java'
               run: sudo apt-get install openjdk-8-jdk
