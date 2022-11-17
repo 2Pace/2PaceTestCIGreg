@@ -106,11 +106,12 @@ jobs:
               run: | 
                   echo y | sfdx plugins:install sfdx-git-delta
                   sfdx plugins 
-                  
+
             # Refresh ubuntu repositories
             - name: 'Update Ubuntu repos'
-              run: sudo mv /etc/apt/sources.list.d/* ~/solution
-              run: sudo apt update
+              run: | 
+                  sudo mv /etc/apt/sources.list.d/* ~/solution
+                  sudo apt update 
 
             # Install java as it is required for the next step
             - name: 'Installing java'
