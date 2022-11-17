@@ -12,6 +12,7 @@ public with sharing class TestCI {
         System.debug('test2');
         System.debug('test3');
         System.debug('test4');
+        System.debug('test5');
         return true;
     }
 }
