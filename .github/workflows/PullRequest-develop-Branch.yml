@@ -115,8 +115,7 @@ jobs:
 #
             # Install java as it is required for the next step
             - name: 'Installing java'
-#              run: sudo apt-get install openjdk-8-jre
-              run: sudo apt-get install openjdk-8-jdk --fix-missing
+              run: sudo apt-get install openjdk-8-jdk
 
             # Install SFDX scanner
             - name: 'Installing SFDX scanner'
