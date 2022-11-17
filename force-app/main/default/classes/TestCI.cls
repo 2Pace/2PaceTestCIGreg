@@ -9,6 +9,10 @@
 public with sharing class TestCI {
     public static Boolean TestCI() {
         System.debug('test');
+        System.debug('test2');
+        System.debug('test3');
+        System.debug('test4');
+        System.debug('test5');
         return true;
     }
 }
