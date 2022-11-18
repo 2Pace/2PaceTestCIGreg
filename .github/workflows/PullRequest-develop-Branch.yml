@@ -107,10 +107,9 @@ jobs:
                   echo y | sfdx plugins:install sfdx-git-delta
                   sfdx plugins 
 
-# this fails to run, as it's not used, comment till it works again
-#            # Install java as it is required for the next step
-#            - name: 'Installing java'
-#              run: sudo apt-get install openjdk-8-jdk
+            # Install java as it is required for the next step
+            - name: 'Installing java'
+              run: sudo apt-get install openjdk-8-jdk
 
             # Install SFDX scanner
             - name: 'Installing SFDX scanner'
